@@ -62,6 +62,8 @@ long getMaxLong(){
 int min(int x,int y){  
     return y ^ ((x ^ y) & -(x < y));    
 }  
+#define MIN(a, b) (a) > (b) ? (b) : (a)
+#define MAX(a, b) (a) > (b) ? (a) : (b)
 
 // n+1 = -~n 
 // n-1 = ~-n
@@ -81,6 +83,19 @@ int cmp(int x, int y){
 // x = x == a ? b : a;
 // x = a + b - x;
 // x = a ^ b ^ x;
+
+// 最大公约数
+static inline int gcd(int p, int q){
+    if (p == 0) return q;
+    gcd(q, p % q); 
+}
+
+// 最小公倍数
+// p is biger than q
+static inline int gcm(int p, int q){
+    return q / gcd(p,q) 
+    
+}
 
 int main(int argc, char const *argv[])
 {

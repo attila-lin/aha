@@ -9,48 +9,48 @@
 static Node
 create_a_node()
 {
-	Node ret = (Node)malloc(sizeof(struct node));
-	ret->data = (Type)0;
-	ret->next = NULL;
-	return ret;
+  Node ret = (Node)malloc(sizeof(struct node));
+  ret->data = (Type)0;
+  ret->next = NULL;
+  return ret;
 }
 
 Node
 list_init(uint size, Type data[])
 {
-	if (size <= 0)
-	{
-		return NULL;
-	}
+  if (size <= 0)
+  {
+    return NULL;
+  }
 
-	Node tmp = create_a_node();
-	Node head = tmp;
-	for (int i = 0; i < size; ++i)
-	{
-		tmp->data = data[i];
-		if (i != size - 1){
-			tmp->next = create_a_node();
-			tmp = tmp->next;
-		}
-	}
-	return head;
+  Node tmp = create_a_node();
+  Node head = tmp;
+  for (int i = 0; i < size; ++i)
+  {
+    tmp->data = data[i];
+    if (i != size - 1){
+      tmp->next = create_a_node();
+      tmp = tmp->next;
+    }
+  }
+  return head;
 }
 
 Node
 list_init()
 {
-	return create_a_node();
+  return create_a_node();
 }
 
 
 void
 delete_list(Node head)
 {
-	Node current = head;
-	Node next;
-	while(current->next!=NULL){
-		next = current->next;
-		free current;
-		current = next;
-	}
+  Node current = head;
+  Node next;
+  while(current->next!=NULL){
+    next = current->next;
+    free current;
+    current = next;
+  }
 }

@@ -20,16 +20,16 @@
 #define GET_(x) (~x+1)
 
 int getMaxInt(){
-	// -x = ~x + 1;
-    return (1 << 31) - 1;	//2147483647， 由于优先级关系，括号不可省略
-    // return ~(1 << 31);		//2147483647
-    // return ((unsigned int) - 1) >> 1;	//2147483647
-    // return (1 << -1) - 1;	//2147483647
+  // -x = ~x + 1;
+    return (1 << 31) - 1; //2147483647， 由于优先级关系，括号不可省略
+    // return ~(1 << 31);   //2147483647
+    // return ((unsigned int) - 1) >> 1;  //2147483647
+    // return (1 << -1) - 1;  //2147483647
 }
 
 int getMinInt(){
-    return 1 << 31;			//-2147483648
-    return 1 << -1;			//-2147483648
+    return 1 << 31;     //-2147483648
+    return 1 << -1;     //-2147483648
 }
 
 //计算n*2
@@ -55,9 +55,9 @@ int isOddNumber(int n){
 }
 
 void swap(int a, int b){
-	a ^= b;
-	b ^= a;
-	a ^= b;
+  a ^= b;
+  b ^= a;
+  a ^= b;
 }
 
 long getMaxLong(){
@@ -80,10 +80,10 @@ int getAverage(int x, int y){
 }
 
 int cmp(int x, int y){
-	// -1 (x<y)
-	//  0 (x=y)
-	//  1 (x>y)
-	return (x>y)-(x<y);
+  // -1 (x<y)
+  //  0 (x=y)
+  //  1 (x>y)
+  return (x>y)-(x<y);
 }
 
 // x = x == a ? b : a;
@@ -104,11 +104,11 @@ static inline int gcm(int p, int q){
 
 int main(int argc, char const *argv[])
 {
-	unsigned int x = 23;
+  unsigned int x = 23;
 
-	printf("%d\n", R1_TO_0(x)); // (0101 0000)2
+  printf("%d\n", R1_TO_0(x)); // (0101 0000)2
 
-	printf("%d\n", R1S_TO_0(x));
-	return 0;
+  printf("%d\n", R1S_TO_0(x));
+  return 0;
 }
 

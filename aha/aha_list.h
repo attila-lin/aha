@@ -12,8 +12,8 @@ typedef int Type;
 
 struct node
 {
-	Type data;
-	struct node next;
+  Type data;
+  struct node next;
 };
 
 typedef struct node * Node;

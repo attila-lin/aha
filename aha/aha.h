@@ -1,11 +1,20 @@
-typedef unsigned int 	aha_uint
-typedef unsigned long 	aha_ulon
-typedef unsigned float 	aha_uflo
-typedef unsigned double aha_udou
+/*
+ * Copyright (c) 2014, Yiyu Lin <linyiyu1992 at gmail dot com>
+ * All rights reserved.
+ */
 
-typedef int				aha_int 
-typedef long 			aha_lon
-typedef float           aha_flo
-typedef double			aha_dou
-typedef char			aha_cha
+#ifndef _AHA_H_
+#define _AHA_H_
 
+typedef unsigned int 		uint
+typedef unsigned long 	ulong
+typedef unsigned float 	ufloat
+typedef unsigned double udouble
+
+// typedef int				a_int
+// typedef long 			a_lon
+// typedef float     a_flo
+// typedef double		a_dou
+// typedef char			a_cha
+
+#endif /*_AHA_H_*/

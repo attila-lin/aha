@@ -11,9 +11,9 @@ typedef unsigned long   ulong
 typedef unsigned float  ufloat
 typedef unsigned double udouble
 
-// typedef int        a_int
-// typedef long       a_lon
-// typedef float     a_flo
+// typedef int      a_int
+// typedef long     a_lon
+// typedef float    a_flo
 // typedef double   a_dou
 // typedef char     a_cha
 

@@ -3,10 +3,11 @@
  * All rights reserved.
  */
 
-
 #include "aha.h"
 
-static Node
+static inline Node create_a_node();
+
+static inline Node
 create_a_node()
 {
   Node ret = (Node)malloc(sizeof(struct node));
@@ -54,3 +55,4 @@ delete_list(Node head)
     current = next;
   }
 }
+

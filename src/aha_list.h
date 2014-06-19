@@ -18,8 +18,14 @@ struct node
 
 typedef struct node * Node;
 
+// init
 Node list_init(uint size, Type data[]);
 Node list_init();
+
+// add
+
+// insert
+Node list_insert(Type data);
 
 void delete_list(Node head);
 
